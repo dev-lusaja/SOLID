@@ -30,6 +30,10 @@ class User implements UserInterface
 	 */
 	
 
+	/**
+	 * @param String
+	 * @param String
+	 */
 	public function __construct(String $name, String $pass)
 	{
 		$this->name = $name;
@@ -37,6 +41,9 @@ class User implements UserInterface
 	}
 
 
+	/**
+	 * @return array
+	 */
 	public function getData(): array
 	{
 		return [

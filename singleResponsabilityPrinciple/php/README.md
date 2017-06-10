@@ -1,4 +1,4 @@
-#Single Responsability Principle
+# Single Responsability Principle
 
 This principle tells us that a class must have methods that are proper to the entity, in the example we can see that the methods of formatting the result were taken to classes whose function is to format the date.
 
