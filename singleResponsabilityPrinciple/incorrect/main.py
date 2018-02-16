@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-class Book(object):
+class Book():
     def getTitle(self):
         return 'Im a title'
     
