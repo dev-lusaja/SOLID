@@ -35,7 +35,7 @@ class Square(Shape):
 
     @property
     def area(self):
-        return self.side * self.side        
+        return self.side * self.side
 
 class AreaCalculator(object):
 
@@ -55,7 +55,6 @@ class AreaCalculator(object):
 if __name__ == '__main__':
     rectangle = Rectangle(12,22)
     square = Square(5)
-    shapes = [rectangle, square]
     area_calculator = AreaCalculator()
     area_calculator.set_shape(rectangle)
     area_calculator.set_shape(square)
