@@ -30,31 +30,31 @@ class RadioCd(object):
 class CarSpeedControl(SpeedControl):
 
     def start_engine(self):
-        print 'start engine'
+        print('start engine')
 
     def accelerate(self):
-        print 'accelerate'
+        print('accelerate')
 
     def brake(self):
-        print 'brake'
+        print('brake')
 
     def change_gear(self):
-        print 'change gear'
+        print('change gear')
 
 class CarRadioCd(RadioCd):
 
     def stop_radio(self):
-        print 'stop radio'
+        print('stop radio')
 
     def eject_cd(self):
-        print 'eject cd'
+        print('eject cd')
 
 # Decorator
 
 def validate_type_hinting(func):
     def inner(*argv):
-        if not issubclass(type(argv[1]), SpeedControl) : print "%s is a type %s, the function need a SpeedControl type" % (argv[1], type(argv[1])); exit(0)
-        if not issubclass(type(argv[2]), RadioCd) : print "%s is a type %s, the function need a RadioCd type" % (argv[2], type(argv[2])); exit(0)
+        if not issubclass(type(argv[1]), SpeedControl) : print("%s is a type %s, the function need a SpeedControl type" % (argv[1], type(argv[1]))); exit(0)
+        if not issubclass(type(argv[2]), RadioCd) : print("%s is a type %s, the function need a RadioCd type" % (argv[2], type(argv[2]))); exit(0)
         return func(*argv)
     return inner
 

@@ -22,11 +22,11 @@ class SalarySavingAccount(SavinAccount):
 
 class FixDepositeSavingAccount(SavinAccount):
     def withdrawal(self, ammount):
-        raise 'Not supported by this account type'
+        return 'Not supported by this account type'
 
 class AccountManager(object):
     def withdrawFromAccount(self, account, ammount):
-        print account.withdrawal(ammount)
+        print(account.withdrawal(ammount))
 
 
 if __name__ == '__main__':
@@ -39,5 +39,3 @@ if __name__ == '__main__':
     account_manager.withdrawFromAccount(regular_saving_account, ammount)
     account_manager.withdrawFromAccount(salary_saving_account, ammount)
     account_manager.withdrawFromAccount(fix_deposite_saving_account, ammount)
-
-

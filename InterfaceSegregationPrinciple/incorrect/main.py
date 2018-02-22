@@ -35,31 +35,31 @@ class Vehicle(object):
 
 class Car(Vehicle):
     def start_engine(self):
-        print 'start engine'
+        print('start engine')
 
     def accelerate(self):
-        print 'accelerate'
+        print('accelerate')
 
     def brake(self):
-        print 'brake'
+        print('brake')
 
     def lights_on(self):
-        print 'lights on'
+        print('lights on')
 
     def signal_left(self):
-        print 'signal left'
+        print('signal left')
 
     def signal_right(self):
-        print 'signal right'
+        print('signal right')
 
     def change_gear(self):
-        print 'change gear'
+        print('change gear')
 
     def stop_radio(self):
-        print 'stop radio'
+        print('stop radio')
 
     def eject_cd(self):
-        print 'eject cd'
+        print('eject cd')
 
 if __name__ == '__main__':
     car = Car()

@@ -3,7 +3,7 @@
 # Decorator
 def validate_type_hinting(func):
     def inner(*argv):
-        if not isinstance(argv[1], PdfBook) : print "%s is a type %s, the function need a PdfBook type" % (argv[1], type(argv[1])); exit(0)
+        if not isinstance(argv[1], PdfBook) : print("%s is a type %s, the function need a PdfBook type" % (argv[1], type(argv[1]))); exit(0)
         return func(*argv)
     return inner
 
@@ -25,4 +25,4 @@ class PdfBook(object):
 if __name__ == '__main__':
     pdf_book = PdfBook()
     pdf_reader = PdfReader(pdf_book)
-    print pdf_reader.read()
+    print(pdf_reader.read())

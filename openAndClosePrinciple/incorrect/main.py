@@ -29,4 +29,4 @@ class AreaCalculator(object):
 
 if __name__ == '__main__':
     area_calculator = AreaCalculator()
-    print area_calculator.total_area()
+    print(area_calculator.total_area())

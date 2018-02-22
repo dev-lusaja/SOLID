@@ -22,11 +22,11 @@ class PrinterInterface:
 
 class PlaintTextPrinter(PrinterInterface):
     def printPage(self, page):
-        print page
+        print(page)
 
 class HtmlPrinter(PrinterInterface):
     def printPage(self, page):
-        print '<div> %s </div>' % page
+        print('<div> %s </div>' % page)
 
 
 if __name__ == '__main__':

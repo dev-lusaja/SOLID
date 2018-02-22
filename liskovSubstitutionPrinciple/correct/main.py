@@ -42,7 +42,7 @@ class FixDepositeSavingAccount(SavinAccountWithoutWithdrawal):
 
 def verifiy_withdrawal(func):
     def inner(*argv):
-        if not issubclass(type(argv[1]), SavinAccountWithWithdrawal) : print "%s is a type %s, the function need a SavinAccountWithWithdrawal type" % (argv[1], type(argv[1])); exit(0)
+        if not issubclass(type(argv[1]), SavinAccountWithWithdrawal) : print("%s is a type %s, the function need a SavinAccountWithWithdrawal type" % (argv[1], type(argv[1]))); exit(0)
         return func(*argv)
     return inner
 
@@ -53,7 +53,7 @@ class AccountManager(object):
 
     @verifiy_withdrawal
     def withdrawFromAccount(self, account, ammount):
-        print account.withdrawal(ammount)
+        print(account.withdrawal(ammount))
 
 
 if __name__ == '__main__':

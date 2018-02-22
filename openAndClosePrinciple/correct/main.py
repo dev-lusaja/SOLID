@@ -5,7 +5,7 @@ from abc import ABCMeta, abstractmethod
 # is a decorator
 def verify_shape_type(func):
     def inner(self, shape):
-        if not issubclass(type(shape), Shape) : print "%s is a type %s, the function need a Shape type" % (shape, type(shape)); exit(0)
+        if not issubclass(type(shape), Shape) : print("%s is a type %s, the function need a Shape type" % (shape, type(shape))); exit(0)
 
         return func(self, shape)
     return inner
@@ -59,4 +59,4 @@ if __name__ == '__main__':
     area_calculator.set_shape(rectangle)
     area_calculator.set_shape(square)
 
-    print area_calculator.total_area()
+    print(area_calculator.total_area())

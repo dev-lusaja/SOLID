@@ -4,7 +4,7 @@ from abc import ABCMeta, abstractmethod
 # Decorator
 def validate_type_hinting(func):
     def inner(*argv):
-        if not issubclass(type(argv[1]), Ebook) : print "%s is a type %s, the function need a Ebook type" % (argv[1], type(argv[1])); exit(0)
+        if not issubclass(type(argv[1]), Ebook) : print("%s is a type %s, the function need a Ebook type" % (argv[1], type(argv[1]))); exit(0)
         return func(*argv)
     return inner
 
@@ -33,4 +33,4 @@ class PdfEbook(Ebook):
 if __name__ == '__main__':
     pdf_ebook = PdfEbook()
     ebook_reader = EbookReader(pdf_ebook)
-    print ebook_reader.read()
+    print(ebook_reader.read())

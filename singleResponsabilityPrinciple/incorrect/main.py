@@ -8,10 +8,10 @@ class Book():
         return 'Im a author'
 
     def printTextCurrentPage(self):
-        print 'Current page'
+        print('Current page')
 
     def printHtmlCurrentPage(self):
-        print '<div> Current page </div>'
+        print('<div> Current page </div>')
 
 
 if __name__ == '__main__':
